@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ArturAbdullin/express-ts/issues"
   },
-  "homepage": "https://github.com/ArturAbdullin/express-ts#readme"
+  "homepage": "https://github.com/ArturAbdullin/express-ts#readme",
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
 }
