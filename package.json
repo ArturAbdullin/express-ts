@@ -1,0 +1,24 @@
+{
+  "name": "express-ts",
+  "version": "1.0.0",
+  "description": "express.js + typescript study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturAbdullin/express-ts.git"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "rest-api"
+  ],
+  "author": "Artur Abdullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturAbdullin/express-ts/issues"
+  },
+  "homepage": "https://github.com/ArturAbdullin/express-ts#readme"
+}
