@@ -1,4 +1,5 @@
 import { Member } from "./types";
+import { writeDataToFile } from "../utils";
 
 let members: Member[] = require("../../database/members.json");
 
@@ -24,4 +25,16 @@ const findById = (id: string): Promise<Member> => {
   });
 };
 
-export { findAll, findById };
+const removeEntry = (id: string): Promise<any> => {
+  return new Promise((resolve, reject) => {
+    if (members.some((m) => m.id === id)) {
+      members = members.filter((m) => m.id !== id);
+      writeDataToFile("./database/members.json", members);
+      resolve(true);
+    } else {
+      reject(new Error("member not found"));
+    }
+  });
+};
+
+export { findAll, findById, removeEntry };
