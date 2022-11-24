@@ -21,7 +21,7 @@ const findById = (id: string): Promise<Member> => {
   return new Promise((resolve, reject) => {
     const member = members.find((m) => m.id === id);
     if (member) resolve(member);
-    else reject("member not found");
+    else reject(new Error("member not found"));
   });
 };
 
