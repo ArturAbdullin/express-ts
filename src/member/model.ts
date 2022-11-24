@@ -11,4 +11,17 @@ const findAll = (): Promise<Member[]> => {
   });
 };
 
-export { findAll };
+/**
+ * Returns a promise to find a member in the database by id
+ * @param id member id
+ * @returns Promise
+ */
+const findById = (id: string): Promise<Member> => {
+  return new Promise((resolve, reject) => {
+    const member = members.find((m) => m.id === id);
+    if (member) resolve(member);
+    else reject("member not found");
+  });
+};
+
+export { findAll, findById };
