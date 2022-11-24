@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
 
-const server = express();
+const app = express();
 
 // cross-origin resource sharing
-server.use(cors());
+app.use(cors());
 
-export default server;
+export default app;
